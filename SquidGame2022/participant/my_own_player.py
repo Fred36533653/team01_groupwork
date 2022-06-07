@@ -5,6 +5,7 @@ import copy
 
 class my_own_player(part.Participant):
     def __init__(self):
+        random.seed(1);
         super().__init__('name of your team', 'team num')
         # you can change everything in this code file!!
         # also, you can define your own variables here or in the overriding method
@@ -13,6 +14,7 @@ class my_own_player(part.Participant):
 
     # ====================================================================== for initializing your player every round
     def initialize_player(self, string):
+        random.seed(1);
         # you can override this method in this sub-class
         # this method must contain 'self.initialize_params()' which is for initializing some essential variables
         # you can initialize what you define
